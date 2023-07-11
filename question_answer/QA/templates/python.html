@@ -1,0 +1,28 @@
+ {% load static %}
+ {% load bootstrap4 %}
+
+ <!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+       <link rel="stylesheet" href="{% static 'global.css' %}">
+        <title>PYTHON</title>
+      
+    </head>
+    <body>
+
+
+<button class="btn btn-primary">Click me</button>
+
+       {% for x in question_list%}
+       <ol>
+       <li>{{x.question_txt}}
+       <pre>{{x.exp_sol}}</pre>
+       <pre>{{x.answer}}</pre>
+       </li>
+       </ol>
+       {% endfor %}
+        
+    </body>
+</html>
