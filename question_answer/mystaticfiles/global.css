@@ -1,4 +1,6 @@
 body {
     color: greenyellow;
   }
-  
+li{
+  padding:10px,0;
+}

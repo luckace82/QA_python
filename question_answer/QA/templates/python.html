@@ -40,32 +40,35 @@
   </div>
 </nav>
 <div class='container'>
-
+  <ol>
 
        {% for x in question_list%}
-       <ol>
+     
        <li>
    
-       
-  <a class="btn btn-primary" data-toggle="collapse" href="#{{x.id}}" role="button" aria-expanded="false" aria-controls="{{x.id}}">
+   <a class="btn btn-info" data-toggle="collapse" href="#a{{x.id}}" role="button" aria-expanded="false" aria-controls="">
 {{x.question_txt}}
   </a>
 
-<div class="collapse" id="{{x.question}}">
-  <div class="card card-body" >
+<div class="collapse" id="a{{x.id}}">
+  <div class="card" >
        <h3>EXPECTED SOLUTION</h3>
        <pre>{{x.exp_sol}}</pre>
        <h3>ANSWER</h3>
        <pre>{{x.answer}}</pre>
   
   </div>
-</div>
+</div> 
+
+  
        
        </li>
+       
+          
+       {% endfor %}
        </ol>
        </div>   
-       <p>
-       {% endfor %}
+    
         
     </body>
 </html>
