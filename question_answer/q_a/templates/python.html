@@ -17,7 +17,7 @@
       
     </head>
     <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
   <a class="navbar-brand" href="#">LS</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -46,25 +46,25 @@
      
        <li style="padding-top:10px;">
    
-   <a class="btn btn-info" data-toggle="collapse" href="#a{{x.id}}" role="button" aria-expanded="false" aria-controls="">
-<h3 style="text-align=left">{{x.question_txt}}</h3>
+   <a class="btn btn-outline-secondary" data-toggle="collapse" href="#a{{x.id}}" role="button" aria-expanded="false" aria-controls="">
+<h3 style="text-align:left">{{x.question_txt}}</h3>
   </a>
 
 <div class="collapse" id="a{{x.id}}">
   <div class="card" >
   <p>
-  <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#b{{x.id}}" aria-expanded="false" aria-controls="b{{x.id}}">  <h3>EXPECTED SOLUTION</h3></button>
-  <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#c{{x.id}}" aria-expanded="false" aria-controls="c{{x.id}}"> <h3>ANSWER</h3></button>
+  <button class="btn btn-outline-info" type="button" data-toggle="collapse" data-target="#b{{x.id}}" aria-expanded="false" aria-controls="b{{x.id}}">  <h3>EXPECTED SOLUTION</h3></button>
+  <button class="btn btn-outline-info" type="button" data-toggle="collapse" data-target="#c{{x.id}}" aria-expanded="false" aria-controls="c{{x.id}}"> <h3>ANSWER</h3></button>
 </p>
 <div class="row">
-  <div class="col-lg-6 col-md-6 col-sm-12">
+  <div class="col-lg-6 col-md-12 col-sm-12">
     <div class="collapse multi-collapse" id="b{{x.id}}">
       <div class="card ">
           <pre>{{x.exp_sol}}</pre>
       </div>
     </div>
   </div>
-  <div class="col-lg-6 col-md-6 col-sm-12">
+  <div class="col-lg-6 col-md-12 col-sm-12">
     <div class="collapse multi-collapse" id="c{{x.id}}">
       <div class="card ">
  <pre>{{x.answer}}</pre>      </div>
