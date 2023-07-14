@@ -26,7 +26,7 @@ class Migration(migrations.Migration):
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('answer', models.TextField(max_length=1000)),
                 ('exp_sol', models.TextField(max_length=1000)),
-                ('question', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='QA.question')),
+                ('question', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='q_a.question')),
             ],
         ),
     ]

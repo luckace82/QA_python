@@ -1,4 +1,5 @@
 from django.db import models
+
 class Question(models.Model):
     question_txt=models.CharField(max_length=100)
     pub_date=models.DateTimeField("published_date")
