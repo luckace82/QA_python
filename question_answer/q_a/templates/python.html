@@ -52,12 +52,12 @@
 
 <div class="collapse" id="a{{x.id}}">
   <div class="card" >
-  <p>
-  <button class="btn btn-outline-info" type="button" data-toggle="collapse" data-target="#b{{x.id}}" aria-expanded="false" aria-controls="b{{x.id}}">  <h3>EXPECTED SOLUTION</h3></button>
-  <button class="btn btn-outline-info" type="button" data-toggle="collapse" data-target="#c{{x.id}}" aria-expanded="false" aria-controls="c{{x.id}}"> <h3>ANSWER</h3></button>
-</p>
+    
+
 <div class="row">
   <div class="col-lg-6 col-md-12 col-sm-12">
+  <button class="btn btn-outline-info" type="button" data-toggle="collapse" data-target="#b{{x.id}}" aria-expanded="false" aria-controls="b{{x.id}}">  <h3>EXPECTED SOLUTION</h3></button>
+
     <div class="collapse multi-collapse" id="b{{x.id}}">
       <div class="card ">
           <pre>{{x.exp_sol}}</pre>
@@ -65,6 +65,7 @@
     </div>
   </div>
   <div class="col-lg-6 col-md-12 col-sm-12">
+    <button class="btn btn-outline-info" type="button" data-toggle="collapse" data-target="#c{{x.id}}" aria-expanded="false" aria-controls="c{{x.id}}"> <h3>ANSWER</h3></button>
     <div class="collapse multi-collapse" id="c{{x.id}}">
       <div class="card ">
  <pre>{{x.answer}}</pre>      </div>
