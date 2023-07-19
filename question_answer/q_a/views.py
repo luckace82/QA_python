@@ -16,8 +16,8 @@ class PythonView(View):
         return render(request, 'python.html', content)
 class PythonansView(View):
     def get(self,request,x_id):
-        ans_list=Question.objects.get(Question,pk=x_id)
+        ans_list=Question.objects.get(pk=x_id)
         content={
-            "ans_list":ans_list
+            "x":ans_list
         }
         return render(request,'pythonans.html',content)
