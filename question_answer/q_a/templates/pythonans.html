@@ -1,0 +1,32 @@
+
+
+{% extends 'master.html' %}
+{% block body %}
+{{x.question_txt}}
+{% for question in question_list%}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <button class="btn btn-outline-info" type="button" data-toggle="collapse" data-target="#b{{ question.id }}" aria-expanded="false" aria-controls="b{{ question.id }}">
+                    <h3>EXPECTED SOLUTION</h3>
+                </button>
+                <div class="collapse multi-collapse" id="b{{ question.id }}">
+                    <div class="card">
+                        <pre>{{ question.exp_sol }}</pre>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <button class="btn btn-outline-info" type="button" data-toggle="collapse" data-target="#c{{ question.id }}" aria-expanded="false" aria-controls="c{{ question.id }}">
+                    <h3>ANSWER</h3>
+                </button>
+                <div class="collapse multi-collapse" id="c{{ question.id }}">
+                    <div class="card">
+                        <pre>{{ question.answer }}</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor%}
+{% endblock %}

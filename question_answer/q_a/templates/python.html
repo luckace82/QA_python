@@ -1,12 +1,8 @@
- {% load static %}
- {% load bootstrap4 %}
+{% extends 'master.html'%}
+  {% block body%}
 
- <!DOCTYPE html>
 
-<html>
-    <head>
-        <meta charset="utf-8">
-     
+
   
         <title>PYTHON</title>
 
@@ -16,28 +12,28 @@
        {% for x in question_list %}
      
        <li style="padding-top:10px;">
-   
-   <a class="btn btn-outline-secondary" data-toggle="collapse" href="#a{{x.id}}" role="button" aria-expanded="false" aria-controls="">
-<h3 style="text-align:left"  href="">{{x.question_txt}}</h3>
+   <a >
+   <a class="btn btn-outline-secondary"  href="{%url 'pythonans' x_id %}">
+<h3 style="text-align:left" >{{x.question_txt}}</h3>
   </a>
-
-
-     
+</a>
      
       
   
-  </div>
-</div> 
+
+{% endfor %}
+
+{% endblock %}
+     
 
   
        
        </li>
        
           
-       {% endfor %}
+
+       {% block content%}
+{% endblock %}
        </ol>
        </div>   
     
-        
-    </body>
-</html>
