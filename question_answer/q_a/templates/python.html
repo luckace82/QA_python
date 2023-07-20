@@ -7,16 +7,16 @@
         <title>PYTHON</title>
 
 <div class='container'>
-  <ol>
+  <ol  style="padding-top:10px;"">
 
        {% for x in question_list %}
      
-       <li style="padding-top:10px;">
-   <a >
-   <a class="btn btn-outline-secondary"  href="{% url 'pythonans' x.id %}">
+       <li style="padding-top:20px;">
+   
+   <a style="display: block; width: 100%; text-align: center; text-decoration: none;" class="btn btn-outline-secondary" href="{% url 'pythonans' x.id %}" >
 <h3 style="text-align:left" >{{x.question_txt}}</h3>
   </a>
-</a>
+
      
       
   
@@ -36,4 +36,4 @@
 {% endblock %}
        </ol>
        </div>   
-    
+
