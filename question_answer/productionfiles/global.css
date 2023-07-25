@@ -1,5 +1,30 @@
 body {
-    color: violet;
-  }
+    background: violet;
 
+  }
+.container{
+  background-color: rgba(146, 157, 202, 0.199);
+
+}
+.container-fluid
+{
+  background-color: black;
+}
+.footer-container{
+  background-color: blueviolet;
+
+  padding: 50px 20px 50px 20px !important;
+  border-radius : 0 25% ;
+}
+.column-gap{
   
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+  .master-footer{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.219);
+    color: rgba(17, 242, 250, 0.678);
+    border-end-end-radius: 25%;
+  }
